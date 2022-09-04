@@ -9,7 +9,6 @@ export const SelectContainer = styled.div`
   color: ${(props) => props.theme['purple-dark']};
 
   padding: 0.5rem;
-
   border-radius: 6px;
 
   cursor: pointer;
