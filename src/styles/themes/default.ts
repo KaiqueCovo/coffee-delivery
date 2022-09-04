@@ -22,4 +22,4 @@ export const defaultTheme = {
     input: '#EDEDED',
     card: '#F3F2F2',
   },
-};
+} as const;
