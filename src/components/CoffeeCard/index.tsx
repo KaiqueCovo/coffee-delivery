@@ -1,32 +1,44 @@
-import { CoffeeCardContainer, CoffeeInfo, CoffeeLabels } from './styles';
+import { priceFormatter } from '@/utils';
+
+import { NumberInput } from '../Inputs';
+import { ShoppingCart } from '../ShoppingCart';
+import {
+  CoffeeCardContainer,
+  CoffeeInfo,
+  CoffeeTags,
+  CoffeeBuy,
+} from './styles';
 
 interface CoffeeCardProps {
   name: string;
   description: string;
   src: string;
-  labels: string[];
+  tags: string[];
 }
 
-export function CoffeeCard({
-  name,
-  description,
-  src,
-  labels,
-}: CoffeeCardProps) {
+export function CoffeeCard({ name, description, src, tags }: CoffeeCardProps) {
   return (
     <CoffeeCardContainer>
       <img src={src} alt='Imagem do café' />
 
-      <CoffeeLabels>
-        {labels.map((label) => (
-          <span>{label}</span>
+      <CoffeeTags>
+        {tags.map((tag) => (
+          <span>{tag}</span>
         ))}
-      </CoffeeLabels>
+      </CoffeeTags>
 
       <CoffeeInfo>
         <span>{name}</span>
         <small>{description}</small>
       </CoffeeInfo>
+
+      <CoffeeBuy>
+        <span>{priceFormatter.format(9.9)}</span>
+        <div>
+          <NumberInput />
+          <ShoppingCart color={'purple-dark'} />
+        </div>
+      </CoffeeBuy>
     </CoffeeCardContainer>
   );
 }

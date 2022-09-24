@@ -21,7 +21,7 @@ export const CoffeeCardContainer = styled.li`
   }
 `;
 
-export const CoffeeLabels = styled.div`
+export const CoffeeTags = styled.div`
   display: flex;
   gap: 0.25rem;
 
@@ -41,6 +41,7 @@ export const CoffeeLabels = styled.div`
 export const CoffeeInfo = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   text-align: center;
 
   margin-top: 1rem;
@@ -54,7 +55,33 @@ export const CoffeeInfo = styled.div`
 
   small {
     font-size: 0.875rem;
-    color: ${(props) => props.theme['base-card']};
-    margin-top: 0.5rem;
+    color: ${(props) => props.theme['base-label']};
+  }
+`;
+
+export const CoffeeBuy = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.438rem;
+
+  margin-top: 1rem;
+
+  span {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: capitalize;
+
+    &::before {
+      content: 'R$ ';
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+    }
+  }
+
+  > div {
+    display: flex;
+    gap: 0.5rem;
   }
 `;
