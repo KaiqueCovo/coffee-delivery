@@ -13,44 +13,44 @@ export function ListCoffe() {
           src={coffeeImg}
           name='Expresso tradicional'
           description='O melhor café do mundo'
-          labels={['TRADICIONAL', 'QUENTE']}
+          tags={['TRADICIONAL', 'QUENTE']}
         />
         <CoffeeCard
           src={coffeeImg}
           name='Expresso tradicional'
           description='O melhor café do mundo'
-          labels={['TRADICIONAL', 'QUENTE']}
+          tags={['TRADICIONAL', 'QUENTE']}
         />
         <CoffeeCard
           src={coffeeImg}
           name='Expresso tradicional'
           description='O melhor café do mundo'
-          labels={['TRADICIONAL', 'QUENTE']}
+          tags={['TRADICIONAL', 'QUENTE']}
         />
         <CoffeeCard
           src={coffeeImg}
           name='Expresso tradicional'
           description='O melhor café do mundo'
-          labels={['TRADICIONAL', 'QUENTE']}
+          tags={['TRADICIONAL', 'QUENTE']}
         />
         <CoffeeCard
           src={coffeeImg}
           name='Expresso tradicional'
           description='O melhor café do mundo'
-          labels={['TRADICIONAL', 'QUENTE']}
+          tags={['TRADICIONAL', 'QUENTE']}
         />
         <CoffeeCard
           src={coffeeImg}
           name='Expresso tradicional'
           description='O melhor café do mundo'
-          labels={['TRADICIONAL', 'QUENTE']}
+          tags={['TRADICIONAL', 'QUENTE']}
         />
 
         <CoffeeCard
           src={coffeeImg}
           name='Expresso tradicional'
           description='O melhor café do mundo'
-          labels={['TRADICIONAL', 'QUENTE']}
+          tags={['TRADICIONAL', 'QUENTE']}
         />
       </ul>
     </ListCoffeeContainer>
