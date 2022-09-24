@@ -7,7 +7,13 @@ import {
 } from 'phosphor-react';
 import { useTheme } from 'styled-components';
 
-import { IntroContainer, IntroContent, ItemsContainer, Title } from './styles';
+import {
+  IntroContainer,
+  IntroContent,
+  Item,
+  ItemsContainer,
+  Title,
+} from './styles';
 
 export function Intro() {
   const theme = useTheme();
@@ -27,30 +33,30 @@ export function Intro() {
             </span>
           </Title>
           <ItemsContainer>
-            <li>
+            <Item variant='yellow-dark'>
               <div>
                 <ShoppingCartIcon color={theme.white} weight='fill' size={16} />
               </div>
-              Compras Simples e segura
-            </li>
-            <li>
+              Compras simples e segura
+            </Item>
+            <Item variant='base-text'>
               <div>
                 <Timer color={theme.white} weight='fill' size={16} />
               </div>
               Entrega rápida e rastreada
-            </li>
-            <li>
+            </Item>
+            <Item variant='yellow'>
               <div>
                 <Package color={theme.white} weight='fill' size={16} />
               </div>
               Embalagem mantém o café intacto
-            </li>
-            <li>
+            </Item>
+            <Item variant='purple'>
               <div>
                 <Coffee color={theme.white} weight='fill' size={16} />
               </div>
-              café chega fresquinho até você
-            </li>
+              Café chega fresquinho até você
+            </Item>
           </ItemsContainer>
         </div>
         <img src={CoffeeDelivery} />

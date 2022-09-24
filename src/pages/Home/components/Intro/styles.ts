@@ -26,7 +26,7 @@ export const Title = styled.div`
     font-family: 'Baloo 2', sans-serif;
     font-weight: 900;
     font-size: 3rem;
-    color: ${(props) => props.theme.base.title};
+    color: ${(props) => props.theme['base-title']};
 
     line-height: 130%;
     margin-bottom: 1rem;
@@ -34,7 +34,7 @@ export const Title = styled.div`
 
   span {
     font-size: 1.25rem;
-    color: ${(props) => props.theme.base.subtitle};
+    color: ${(props) => props.theme['base-subtitle']};
   }
 `;
 
@@ -45,11 +45,15 @@ export const ItemsContainer = styled.ul`
   list-style: none;
 
   margin-top: 4.125rem;
+`;
 
-  li {
-    display: flex;
-    align-items: center;
-  }
+interface ItemProps {
+  variant: 'yellow' | 'yellow-dark' | 'base-text' | 'purple';
+}
+
+export const Item = styled.li<ItemProps>`
+  display: flex;
+  align-items: center;
 
   div {
     width: 2rem;
@@ -57,6 +61,7 @@ export const ItemsContainer = styled.ul`
     padding: 8px;
     border-radius: 100%;
 
-    background-color: ${(props) => props.theme['yellow-dark']};
+    margin-right: 0.75rem;
+    background-color: ${(props) => props.theme[props.variant]};
   }
 `;

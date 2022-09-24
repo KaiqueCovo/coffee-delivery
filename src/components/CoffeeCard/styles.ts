@@ -7,7 +7,7 @@ export const CoffeeCardContainer = styled.li`
   flex-direction: column;
 
   width: 16rem;
-  background-color: ${(props) => props.theme.base.card};
+  background-color: ${(props) => props.theme['base-card']};
 
   border-radius: 6px 36px 6px 36px;
   padding: 0 1.25rem 1.25rem 1.25rem;
@@ -54,7 +54,7 @@ export const CoffeeInfo = styled.div`
 
   small {
     font-size: 0.875rem;
-    color: ${(props) => props.theme.base.label};
+    color: ${(props) => props.theme['base-card']};
     margin-top: 0.5rem;
   }
 `;
