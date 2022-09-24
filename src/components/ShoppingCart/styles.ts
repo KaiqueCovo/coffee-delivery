@@ -1,8 +1,14 @@
 import styled from 'styled-components';
 
-export const ShoppingCartContainer = styled.button`
+interface ShoppingCartContainerProps {
+  variant: 'yellow-light' | 'purple-dark';
+}
+
+export const ShoppingCartContainer = styled.button<ShoppingCartContainerProps>`
   display: flex;
-  background-color: ${(props) => props.theme['yellow-light']};
+
+  background-color: ${(props) => props.theme[props.variant]};
+
   padding: 0.5rem;
 
   border: 0;
