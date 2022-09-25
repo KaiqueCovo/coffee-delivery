@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const IntroContainer = styled.section`
   width: 100vw;
   background-image: url('./background.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
 
   padding: 5.875rem 0 6.75rem 0;
 `;
